@@ -2,11 +2,13 @@
 <html lang="en">
     <head>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
         <title>Record Tracker</title>
     </head>
-    <body onload="askuser()">
+    <body  >
         <h1>Record Tracker</h1>
-     <div >
+        <div id="main">
+     <div  id="taable">
         <table>
             <tr>
                 <th>No</th>
@@ -15,12 +17,18 @@
                 <th>tax </th>
                 <th>Net Salary</th>
             </tr>
-            <tbody id=""></tbody>
+            <tbody id="result"></tbody>
         </table>
 
      </div>
-     <div>
+     <div class="fill">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"></br>
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary"></br>
+        <button onclick="addRecord()">Add Record</button>
 
+     </div>
      </div>
 
     </body>
